@@ -23,26 +23,27 @@ THE SOFTWARE.
 <html>
 <head>
 <title>Gurupriy Inamdar</title>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans:600|Questrial" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <style type="text/css">
 	body {
-		background-color: #000
+		background-color: #2c3e50
 	}
 	#console {
-		font-family: courier, monospace;
-		color: #fff;
+		font-family:'Questrial',sans-serif;;
+		color:#ecf0f1;
 		width:750px;
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:100px;
-		font-size:14px;
+		font-size:24px;
 	}
 	a {
-		color: #0bc;
+		color:#3498db;
 		text-decoration: none;
 	}
 	#a {
-		color: #0f0;
+		color:#2ecc71;
 	}
 	#c {
 		color: #0bc;
@@ -58,7 +59,7 @@ THE SOFTWARE.
 	text: null,
 	accessCountimer:null,
 	index:0, // current cursor position
-	speed:2, // speed of the Typer
+	speed:1, // speed of the Typer
 	file:"", //file, must be setted
 	accessCount:0, //times alt is pressed for Access Granted
 	deniedCount:0, //times caps is pressed for Access Denied
@@ -160,7 +161,7 @@ function replaceUrls(text) {
 }
 }
 Typer.speed=3;
-Typer.file="gurupriy.txt";
+Typer.file="./gurupriy.txt";
 Typer.init();
 
 var timer = setInterval("t();", 30);
@@ -173,18 +174,5 @@ function t() {
 
 </script>
 <div id="console"></div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-610661-7']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>
